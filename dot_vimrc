@@ -1,0 +1,25 @@
+" --- General Settings ---
+set number              " Show line numbers
+set relativenumber      " Show relative line numbers (great for jumping around)
+set mouse=a             " Enable mouse support (clicking, scrolling)
+set clipboard=unnamedplus " Use system clipboard for copy/paste
+set history=1000        " Remember more commands and search history
+
+" --- Search ---
+set hlsearch            " Highlight search results
+set incsearch           " Show search matches as you type
+set ignorecase          " Ignore case when searching...
+set smartcase           " ...unless the query has capital letters
+
+" --- Indentation & Tabs ---
+set expandtab           " Convert tabs to spaces
+set tabstop=4           " Insert 4 spaces for a tab
+set shiftwidth=4        " Number of spaces for auto-indenting
+set smartindent         " Automatically introduce indents where appropriate
+
+" --- UI & Comfort ---
+syntax on               " Enable syntax highlighting
+set wrap                " Wrap long lines visually
+"set cursorline          " Highlight the line the cursor is on
+set wildmenu            " Visual menu for command-line completion
+"set lazyredraw          " Don't redraw screen during macros (faster)
