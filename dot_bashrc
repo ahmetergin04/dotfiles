@@ -35,26 +35,21 @@ test -r '/home/aergin/.opam/opam-init/init.sh' && . '/home/aergin/.opam/opam-ini
 # END opam configuration
 
 
-# Competitive Programming Workspace Helper
 cp_start() {
-    # 1. Ensure a problem name was provided
     if [ -z "$1" ]; then
         echo "Error: Please provide a problem name (e.g., cp_start 4A)"
         return 1
     fi
 
-    # Convert input to uppercase (e.g., 4a -> 4A)
     local PROBLEM=$(echo "$1" | tr '[:lower:]' '[:upper:]')
     local FILENAME="${PROBLEM}.cpp"
     local TEMPLATE_PATH="../template.cpp"
 
-    # 2. Check if the template exists one directory up
     if [ ! -f "$TEMPLATE_PATH" ]; then
         echo "Error: Global template not found at $TEMPLATE_PATH"
         return 1
     fi
 
-    # 3. Check if the file already exists to avoid overwriting your work
     if [ -f "$FILENAME" ]; then
         echo "Warning: $FILENAME already exists! Opening it instead."
     else
@@ -66,7 +61,6 @@ cp_start() {
     vim "$FILENAME"
 }
 
-# Optional: Create a shorter alias for even faster typing
 alias cps=cp_start
 
 export EDITOR=vim
