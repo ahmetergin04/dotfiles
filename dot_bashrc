@@ -69,5 +69,5 @@ cp_start() {
 # Optional: Create a shorter alias for even faster typing
 alias cps=cp_start
 
-export EDITOR =vim
+export EDITOR=vim
 export VISUAL=vim
