@@ -1,9 +1,5 @@
 set clipboard=unnamed,unnamedplus " Use system clipboard for copy/paste
-
 set wildmenu            " Visual menu for command-line completion"
-
-" ===== VISUAL ENHANCEMENTS =====
-" Line numbers and display
 set number                    " Show line numbers
 set cursorline               " Highlight the current line
 set ruler                    " Show cursor position in status line
@@ -12,8 +8,10 @@ set showmatch                " Highlight matching brackets/parentheses
 
 " Colors and syntax
 syntax enable                " Enable syntax highlighting
+filetype on
+filetype plugin indent on
 "set background=dark          " Use dark background for better contrast
-colorscheme habamax " Bright, vibrant color scheme
+colorscheme  pablo" Bright, vibrant color scheme
 " Alternative bright schemes to try:
 " colorscheme ron
 " colorscheme pablo
