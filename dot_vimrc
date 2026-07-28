@@ -1,4 +1,5 @@
-set clipboard=unnamedplus " Use system clipboard for copy/paste
+set clipboard=unnamed,unnamedplus " Use system clipboard for copy/paste
+
 set wildmenu            " Visual menu for command-line completion"
 
 " ===== VISUAL ENHANCEMENTS =====
@@ -21,18 +22,16 @@ colorscheme habamax " Bright, vibrant color scheme
 " colorscheme habamax 
 " Status line configuration
 set laststatus=2            " Always show status line
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ %=\[POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 
 " Visual guides
 set colorcolumn=80          " Show column at 80 characters
 set list                    " Show invisible characters
 set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:+
 
-
-" ===== BEHAVIORAL ENHANCEMENTS =====
 " Indentation and tabs
-set autoindent              " Automatically indent new lines
-set smartindent             " Smart auto-indenting
+"set autoindent              " Automatically indent new lines
+"set smartindent             " Smart auto-indenting
 set expandtab               " Use spaces instead of tabs
 set tabstop=4               " Tab width is 4 spaces
 set shiftwidth=4            " Indent width is 4 spaces
@@ -43,6 +42,8 @@ set ignorecase              " Case-insensitive search
 set smartcase               " Case-sensitive if uppercase letters used
 set incsearch               " Incremental search (highlight as you type)
 set hlsearch                " Highlight all search matches
+nnoremap <Esc> : nohlseach<CR> 
+
 
 " File handling
 set autoread                " Automatically reload files changed outside vim
@@ -57,46 +58,21 @@ set backspace=indent,eol,start  " Allow backspace over everything
 set scrolloff=5             " Keep 5 lines visible above/below cursor
 set wrap                    " Wrap long lines
 set linebreak               " Break lines at word boundaries
-set mouse=a                 " Enable mouse support
 
-" ===== WORKFLOW ENHANCEMENTS =====
 " Remember cursor position
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-" Custom key mappings
-" Clear search highlighting with Escape
-nnoremap <Esc> :nohlsearch<CR>
-
-" Quick save and quit
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>x :x<CR>
-
-" Navigate between split windows easily
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
 " Toggle line numbers
 nnoremap <F2> :set number!<CR>
-
 " Toggle relative line numbers
 nnoremap <F3> :set relativenumber!<CR>
-
 " Abbreviations for common typos and phrases
-iabbrev teh the
-iabbrev adn and
 iabbrev recieve receive
 iabbrev seperate separate
 
-
-" ===== PERFORMANCE =====
 set lazyredraw              " Don't redraw during macros
 set ttyfast                 " Fast terminal connection
 
-
-" ===== SETUP DIRECTORIES =====
 " Create necessary directories if they don't exist
 if !isdirectory($HOME."/.vim/backup")
     call mkdir($HOME."/.vim/backup", "p")
@@ -107,4 +83,3 @@ endif
 if !isdirectory($HOME."/.vim/undo")
     call mkdir($HOME."/.vim/undo", "p")
 endif
-
