@@ -65,3 +65,5 @@ alias cps=cp_start
 
 export EDITOR=vim
 export VISUAL=vim
+
+[ -f "/home/aergin/.ghcup/env" ] && . "/home/aergin/.ghcup/env" # ghcup-env

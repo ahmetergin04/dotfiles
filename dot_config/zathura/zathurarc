@@ -1,0 +1,7 @@
+set recolor true
+set recolor-keephue true
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+map i recolor
+map r reload
+map R rotate
