@@ -1,0 +1,15 @@
+
+alias cps=cp_start
+alias ll='ls -lahF'
+alias la='ls -A'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias mkdir='mkdir -pv'
+alias rm='rm -vi'
+alias cp='cp -vi'
+alias mv='mv -vi'
+alias gs='git status'
+alias g='git'
+alias ga='git add'
+alias gc='git commit -m'
+alias rmdir='rmdir -vi'
