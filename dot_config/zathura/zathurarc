@@ -5,3 +5,4 @@ set statusbar-v-padding 0
 map i recolor
 map r reload
 map R rotate
+set selection-clipboard clipboard
