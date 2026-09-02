@@ -1,0 +1,17 @@
+[Desktop Entry]
+DefaultProfile=aergin.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+RememberWindowSize=false
+
+[MainWindow]
+ToolBarsMovable=Enabled
+
+[SaveHistory Settings]
+Recent URLs[$e]=file:$HOME/Downloads
+
+[UiSettings]
+ColorScheme=
