@@ -5,5 +5,12 @@ sudo dnf install -y \
     tmux \
     vim \
     zathura \
-    zathura-pdf-poppler
-
+    zathura-pdf-poppler \
+    zathura-djvu \
+    tldr \
+    texlive-scheme-full \
+    neovim \
+    htop \
+    ncdu \
+    curl \
+    fastfetch

@@ -14,5 +14,4 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias rmdir='rmdir -vi'
-
-
+alias sdu="sudo dnf upgrade"
