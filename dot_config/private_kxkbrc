@@ -1,6 +1,6 @@
 [Layout]
 DisplayNames=,
-LayoutList=tr,us
+LayoutList=us,tr
 Options=caps:escape
 ResetOldOptions=true
 Use=true

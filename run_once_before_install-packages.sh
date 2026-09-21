@@ -13,4 +13,10 @@ sudo dnf install -y \
     htop \
     ncdu \
     curl \
-    fastfetch
+    fastfetch \
+    make \
+    cmake \
+    libasan \
+    libubsan \
+    gcc \
+    gcc-c++
