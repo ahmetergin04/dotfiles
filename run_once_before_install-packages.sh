@@ -19,4 +19,5 @@ sudo dnf install -y \
     libasan \
     libubsan \
     gcc \
-    gcc-c++
+    gcc-c++ \
+    fzf
