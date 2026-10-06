@@ -1,7 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-28997fcf-7f26-412b-b80c-cfaf037b66de=none,none,Switch to activity "Default"
-switch-to-activity-ad35ede8-4772-4f8a-81dc-65a03a6585cf=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
@@ -278,6 +277,10 @@ _launch=Ctrl+Alt+T\tMeta+Return
 
 [services][org.kde.krunner.desktop]
 _launch=Search\tAlt+Space\tMeta+D
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
 
 [services][org.mozilla.firefox.desktop]
 _launch=Meta+B

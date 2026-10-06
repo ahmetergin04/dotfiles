@@ -60,9 +60,12 @@ cp_start() {
     vim "$FILENAME"
 }
 
-
 export EDITOR=vim
 export VISUAL=vim
+#fzf
+if command -v fzf >/dev/null 2>&1; then
+    eval "$(fzf --bash)"
+fi
 
 [ -f "/home/aergin/.ghcup/env" ] && . "/home/aergin/.ghcup/env" # ghcup-env
 
