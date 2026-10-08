@@ -40,7 +40,7 @@ set ignorecase              " Case-insensitive search
 set smartcase               " Case-sensitive if uppercase letters used
 set incsearch               " Incremental search (highlight as you type)
 set hlsearch                " Highlight all search matches
-nnoremap <Esc> : nohlseach<CR> 
+nnoremap <Esc> :noh<CR>
 
 
 " File handling

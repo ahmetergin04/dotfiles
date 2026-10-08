@@ -74,3 +74,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+alias gandalf='ssh gandalf'
+alias mars='java -jar $HOME/Desktop/cs/CS401-Computer-Architectures/Mars4_5.jar'
+alias matlab='LD_PRELOAD=/usr/lib64/libstdc++.so.6 matlab -softwareopengl'

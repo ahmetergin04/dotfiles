@@ -1,5 +1,5 @@
 
-alias cps=cp_start
+alias cps='cp_start'
 alias ll='ls -lahF'
 alias la='ls -A'
 alias ..='cd ..'
@@ -11,7 +11,8 @@ alias mv='mv -vi'
 alias gs='git status'
 alias g='git'
 alias ga='git add'
+alias gd='git diff'
 alias gc='git commit -m'
 alias gp='git push'
 alias rmdir='rmdir -vi'
-alias sdu="sudo dnf upgrade"
+alias sdu='sudo dnf upgrade'
