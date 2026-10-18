@@ -74,6 +74,14 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.to_bashrc_temp ]; then
+    . ~/.to_bashrc_temp
+fi
 alias gandalf='ssh gandalf'
 alias mars='java -jar $HOME/Desktop/cs/CS401-Computer-Architectures/Mars4_5.jar'
 alias matlab='LD_PRELOAD=/usr/lib64/libstdc++.so.6 matlab -softwareopengl'
+#open tmux session
+if [[  -z "$TMUX" && -z "$STY" ]]; then
+        tmux attach-session -t main 2>/dev/null || tmux new-session -s main
+fi
+
